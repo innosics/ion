@@ -1,0 +1,28 @@
+                    <h2 class="small-heading">{{page.name}}</h2>
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                            <div class="row">
+
+                                <div ng-repeat="task in allTasks" class="col-md-6 col-sm-6 col-xs-12 task-catagory project">
+
+                                    <div class="task-box">
+                                        <p class="task-catagory-name">{{task.name}}</p>
+                                        <p><span class="date">{{task.duedate | date}}</span></p>
+                                        <p class="task-catagory-name">{{task.status}}</p>
+                                        <p class="task-catagory-name">{{task.desc}}</p>
+                                    </div>
+
+									<div class="ovrly">
+									</div>
+									<div class="buttons">
+										<a href="" ng-click="delete(task)" class="fa fa-times"></a>
+										<a href="" ng-click="start(task)" class="fa fa-power-off"></a>
+										<a href="" ng-click="complete(task)" class="fa fa-check"></a>
+									</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>

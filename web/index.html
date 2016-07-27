@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>ionTask</title>
+
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/popup.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/owl.theme.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <link type="text/css" rel="stylesheet" href="assets/ionicons-2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+	<script src="assets/angularjs/1.4.8/angular.min.js"></script>
+	<script src="assets/angularjs/1.4.8/angular-route.js"></script>
+	<script src="assets/angularjs/1.4.8/angular-animate.js"></script>
+
+	<script src="assets/angular-ui/ui-bootstrap-tpls-1.2.5.min.js"></script>
+
+	<script src="modules/ion.module.js"></script>
+	<script src="modules/layout/ion.layout.service.js"></script>
+	<script src="modules/layout/ion.layout.controller.js"></script>
+
+	<script src="modules/auth/auth.service.js"></script>
+	<script src="modules/auth/auth.controller.js"></script>
+
+	<script src="modules/data/local.storage.service.js"></script>
+	<script src="modules/data/data.service.js"></script>
+
+	<script src="modules/def/def.service.js"></script>
+	<script src="modules/task/ion.task.service.js"></script>
+
+	<script src="modules/task/ion.task.list.controller.js"></script>
+	<script src="modules/task/ion.task.controller.js"></script>
+
+</head>
+
+<body ng-app="ionModule" ng-controller="layoutCtrl">
+
+    <!-- Preloader -->
+
+    <div id="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- main-page -->
+
+    <div class="main-page">
+
+        <!-- Introduction -->
+
+        <div class="introduction">
+
+            <div class="intro-content">
+
+                <h1>
+					<!--intro-->
+                </h1>
+                <span>IonTask</span><span class="number"></span>
+                <!--p class="slogan-text text-capitalize">make things easier</p-->
+
+                <div class="social-media hidden-xs">
+                    <a href="http://www.innosics.com" title="Innosics" target="_blank">Innosics</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation Menu -->
+
+        <div class="menu">
+
+            <div data-url_target="workspace" class="contact-btn menu_button" ng-click="create()">
+
+                <img alt="" src="assets/img/create.jpg">
+                <div class="mask">
+                </div>
+                <div class="heading">
+                    <i class="ion-ios-chatboxes-outline hidden-xs"></i>
+                    <h2>Create</h2>
+                </div>
+
+            </div>
+
+            <div data-url_target="workspace" class="profile-btn menu_button" ng-click="planned()">
+                <img alt="" src="assets/img/planned.jpg" style="width:100%; height:100%;">
+                <div class="mask">
+                </div>
+                <div class="heading">
+                    <i class="ion-ios-people-outline hidden-xs"></i>
+                    <h2>Planned</h2>
+                </div>
+            </div>
+
+            <div data-url_target="workspace" class="portfolio-btn menu_button" ng-click="progress()">
+                <img alt="" src="assets/img/progress.jpg">
+                <div class="mask">
+                </div>
+                <div class="heading">
+                    <i class="ion-ios-briefcase-outline hidden-xs"></i>
+                    <h2>Progress</h2>
+                </div>
+            </div>
+
+            <div data-url_target="workspace" class="service-btn menu_button" ng-click="completed()">
+                <img alt="" src="assets/img/completed.jpg">
+                <div class="mask">
+                </div>
+                <div class="heading">
+                    <i class="ion-ios-lightbulb-outline hidden-xs"></i>
+                    <h2>Completed</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+    4 ) Close Button
+    -->
+
+    <div class="close-btn"></div>
+
+    <!--
+    5 ) view
+    -->
+
+    <div id="workspace" class="{{page.class}} container-fluid page">
+        <div class="row">
+            <!--( a ) Portfolio Page Fixed Image Portion -->
+
+            <div class="image-container col-md-3 col-sm-12">
+                <div class="mask">
+                </div>
+                <div class="main-heading">
+                    <h1>{{page.name}}</h1>
+                </div>
+            </div>
+
+            <!--( b ) Portfolio Page Content -->
+
+            <div class="content-container col-md-9 col-sm-12">
+
+                <div ng-view class="clearfix">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="globalLoginModal" role="dialog" ng-include="'modules/auth/auth.html'"></div>
+
+    <!--
+    9 ) Javascript
+    - -->
+
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.popup.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

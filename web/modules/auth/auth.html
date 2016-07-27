@@ -1,0 +1,40 @@
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content"  data-ng-controller="AuthCtrl">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+
+			<div>
+			  <div class="alert alert-danger" data-ng-show="authenticationMessage">
+				<a data-ng-href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> {{authenticationMessage}}
+			  </div>
+
+			  <form name="loginForm" role="form" data-ng-hide="authenticated">
+				<div class="form-group">
+				  <label for="username">Email:</label>
+				  <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" data-ng-model="user.username" required>
+				  <div data-ng-show="loginForm.username.$touched && loginForm.username.$invalid" class="alert alert-danger">
+				   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				   <strong>Error!</strong> The email is invalid!
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label for="password">Password:</label>
+				  <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" data-ng-model="user.password" required>
+				  <div data-ng-show="loginForm.pwd.$touched && loginForm.pwd.$invalid" class="alert alert-danger">
+				   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				   <strong>Error!</strong> The password needs at least 6 characters!
+				  </div>
+				</div>
+			  </form>
+			</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" data-ng-disabled="loginForm.$invalid" class="btn btn-success" disabled data-ng-click="login()">Login</button>
+        </div>
+      </div>
+    </div>
