@@ -1,5 +1,5 @@
 # ion
-Ion is a mobile first task PPC app.
+Ion is a mobile first task PPC app. Live demo: http://www.innosics.com/ion
 
 Requirement:
 
