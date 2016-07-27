@@ -1,5 +1,6 @@
-# ion
-Ion is a mobile first task PPC app. Live demo: http://www.innosics.com/ion
+# IonTask
+
+IonTask is a mobile first task PPC (Planned / Progress / Completed) app. Live demo: http://www.innosics.com/ion
 
 Requirement:
 
