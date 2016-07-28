@@ -11,7 +11,7 @@ IonTask uses Mongodb, Node.js, OAuth2, AngularJS.
 
 How to run it:
 
-1. DB:IonTask uses Mongodb, the db user needs access to any database, such as a role of readWriteAnyDatabase, but here we create a root user is the most simple way:
+1. Mongodb, the db user needs access to any database, such as a role of readWriteAnyDatabase, but here we create a root user is the most simple way:
 
   admin db:
   
