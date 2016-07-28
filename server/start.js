@@ -1,3 +1,6 @@
+/*
+Author: Rosy Yang <rosy.yang@gmail.com> | MIT Licensed
+*/
 const cluster = require('cluster'),
       stopSignals = [
         'SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGTRAP', 'SIGABRT',

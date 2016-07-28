@@ -1,3 +1,6 @@
+/*
+Author: Rosy Yang <rosy.yang@gmail.com> | MIT Licensed
+*/
 var express = require('express');
 var router = express.Router();
 var request = require('request');

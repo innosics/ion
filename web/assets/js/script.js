@@ -1,3 +1,6 @@
+/*
+Author: Rosy Yang <rosy.yang@gmail.com> | MIT Licensed
+*/
 
 $(window).load(function () {
     $('#preloader').delay(350).fadeOut('slow', function () {

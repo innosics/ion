@@ -23,6 +23,6 @@
     "request": "^2.67.0x",
     "mongodb": "^2.1.x"
   },
-  "author": "Innosics - Rosy Yang <rosy.yang@gmail.com>",
-  "license": "ISC"
+  "author": "Rosy Yang <rosy.yang@gmail.com>",
+  "license": "MIT"
 }

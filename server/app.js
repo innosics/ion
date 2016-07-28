@@ -1,3 +1,6 @@
+/*
+Author: Rosy Yang <rosy.yang@gmail.com> | MIT Licensed
+*/
 const http         = require('http'),
       fs           = require('fs'),
       path         = require('path'),

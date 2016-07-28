@@ -1,3 +1,6 @@
+/*
+Author: Rosy Yang <rosy.yang@gmail.com> | MIT Licensed
+*/
 var mongoose = require('mongoose');
 var crypto = require('crypto');
 
