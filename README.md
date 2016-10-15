@@ -25,7 +25,7 @@ How to run it:
      }
     )
   
-  We need at least one client and one user with a space assigned, insert records below into accoutns db:
+  We need at least one client (in clients collection) and one user (in users collection) with a space (in spaces) assigned, insert records below into accoutns db:
     
     { "name" : "Innosics API v1.0", "clientId" : "AF0E16BFAFAA4A37916ECE25ECD420A2", "clientSecret" : "9793FBBE8FD84615B31D4E68FDD4063C"}
   
