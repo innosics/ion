@@ -1,4 +1,4 @@
-# IonTask
+# IonTask project
 
 IonTask is a mobile first task PPC (Planned / Progress / Completed) app. Live demo: http://www.innosics.com/ion
 
