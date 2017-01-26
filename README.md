@@ -2,7 +2,7 @@
 
 IonTask is a mobile first task PPC (Planned / Progress / Completed) app. Live demo: http://api-innosics.rhcloud.com/#/
 
-![screenshot](/Screenshot from 2016-08-02 20:25:25.png?raw=true "Innosics")
+![screenshot](screenshot.png?raw=true "Innosics")
 
 Requirement:
 
